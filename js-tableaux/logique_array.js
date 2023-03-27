@@ -18,3 +18,25 @@ listeDePays.forEach(function(pays){
 })
 
 listeDePays.forEach(pays => console.log(pays));
+
+
+
+//Concatenation d'un tableau associatif
+let monTableauAssociatif = {
+    'prenom'    : 'Mark',
+    'nom'       : 'Zuckerberg',
+    'poste'     : 'PDG de Facebook'
+};
+
+function maFonction(tableau){
+    let chaine = '';
+
+    for (const valeur in tableau) {
+        
+        chaine+= (valeur + ' : ' + tableau[valeur] + '\n');
+    }
+
+    console.log(chaine);
+}
+
+maFonction(monTableauAssociatif);
