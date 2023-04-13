@@ -46,3 +46,20 @@ h1.remove();
 
 //remove en selectionnant directement
 document.querySelector('h1').remove();
+
+
+// *** MODIFIER LE STYLE DE NOS ELEMENTS ***
+
+// decomposée
+
+//let header = document.querySelector('header');
+header.style.backgroundColor = "#ffbd69";
+
+// directe
+
+document.querySelector('h1').style.color = "#111d5e";
+document.querySelector('h1').style.textAlign = "center";
+
+// avec une classe
+
+document.querySelector('header').className = "ma_class";
